@@ -12,10 +12,10 @@ The domain yytt.media is a website that was initially registered in Amazon Web S
 1. Local machine has an identity by running `aws sts get-caller-identity`
 
 # Comands
-* `dotnet build infrastructure` compile the infrastructure
-* `cdk deploy`                  deploy infrustructure stack to local machine's AWS account/region
-* `cdk diff`                    compare local machine's stack with local machine's AWS account/region infrustructure state
-* `cdk synth`                   emits the synthesized CloudFormation template
+- `dotnet build infrastructure`                compile the infrastructure
+- `cdk deploy --context domainName=yytt.media` deploy infrustructure stack to local machine's AWS account/region
+- `cdk diff --context domainName=yytt.media`   compare local machine's stack with local machine's AWS account/region infrustructure state
+- `cdk synth --context domainName=yytt.media`  emits the synthesized CloudFormation template
 
 # License
 MIT License

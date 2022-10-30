@@ -1,8 +1,12 @@
+# Private Specific CDK Context
+cdk.context.json
+
 # CDK asset staging directory
 .cdk.staging
 cdk.out
 
 # User-specific files
+dist/google*.html
 *.suo
 *.user
 *.userosscache
